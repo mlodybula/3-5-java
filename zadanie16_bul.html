@@ -1,0 +1,21 @@
+<!doctype html>
+<head>
+    <title> proste obliczenia</title>
+    <meta charset="utf-8">
+</head>
+<body>
+    <div style="color:red;font-size: 50px;">
+    <script lang="JavaScript">
+        var liczba1=prompt("podaj a=","");
+        var a_bul=parseFloat(liczba1);
+        var liczba2=prompt("podaj b=","");
+        var b_bul=parseFloat(liczba2);
+        document.write("a="+a_bul+"<br>");
+        document.write("b="+b_bul+"<br>");
+        document.write("("+a_bul+"+"+b_bul+")^3=");
+        document.write(+a_bul+"^"+"3+3*"+a_bul+"^2*"+b_bul+"+3*"+a_bul+"*"+b_bul+"^2+"+b_bul+"^"+"3"+"=");
+        document.write(+a_bul*a_bul*a_bul+3*(a_bul*a_bul)*b_bul+3*a_bul*(b_bul*b_bul)+b_bul*b_bul*b_bul);
+    </script>
+    </div>
+</body>
+</html>
