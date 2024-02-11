@@ -1,0 +1,38 @@
+<html>
+<head>
+ <script type="text/javascript">
+ function okno_zamknij_BulczaK()
+ {
+ window.close()
+ }
+21
+ </script>
+</head>
+<body>
+ <form>
+ <textarea name="Bulczak" cols="80" rows="25" disabled>
+    <html>
+<head> 
+<script type="text/javascript">
+ function dom(typ_b,metraż_b,rokukonczenia_b)
+{
+this.typ_domu=typ_b;
+this.metraż=metraż_b;
+this.rok_ukoczenia=rokukonczenia_b;
+}
+ dom.prototype.wypisz_Bulczak = function () 
+ {
+ alert(this.typ_domu+ ' ' + this.metraż+ ' ' + this.rok_ukoczenia);
+ };
+var dom = new dom('Szkieletowy', "250m2", "2023"); 
+dom.wypisz_Bulczak(); 
+ document.write("dostęp do właściwości"+"<br>");
+
+ document.write("+dom+" "+dom.typ_domu+" "+dom.metraż+" "+dom.rok_ukoczenia+);
+ </script>
+ </head>
+<body>
+<br>
+ programowanie obiektowe
+</body>
+</html>
