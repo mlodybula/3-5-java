@@ -1,0 +1,41 @@
+<html>
+<head>
+ <script type="text/javascript">
+ function okno_zamknij_Bulczak()
+ {
+ window.close()
+ }
+ </script>
+</head>
+<body>
+ <form>
+ <textarea name="Bulczak" cols="90" rows="30" disabled>
+<html>
+<body>
+<h1 style="color: green">>Menu</h1>
+<h1 style="color: red">1 - czerwony</h1>
+<h1 style="color: blue">2 - niebieski</h1>
+ 
+ <div style="color:red;font-size:50px;">
+<input type="button" name="Bulczak" value="Oblicz" onclick="fun_bul()" />
+ <script>
+ function fun_bul() {
+ var x_bul = prompt("Podaj kolor", "");
+ if(x_bul == 1 || x_bul.toLowerCase() == "czerwony") {
+document.write('<h1 style="color:red;">wczytałeś kolor czerwony</h1><br>'); }
+ else if(x_bul == 2 || x_bul.toLowerCase() == "niebieski") {
+document.write('<h6 style="color:blue;">wczytałeś kolor niebieski</h6><br>');
+}
+}
+</script>
+ </div>
+</body>
+</html>
+ 
+ </textarea>
+</form>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_Bulczak()"/>
+<script type="text/javascript">
+</script>
+</body>
+</html>

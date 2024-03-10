@@ -1,0 +1,45 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanie 38</title>
+    <style>
+        body {
+            background-color: silver;
+        }
+        #output {
+            font-size: 40px;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        const imie = " ";
+        const liczba1 = imie.length;
+        const liczba2 = liczba1 + 7;
+        const liczba3 = nazwisko.length;
+        const liczba4 = liczba3 + 4;
+
+        document.write(imie + ": " + liczba1 + "<br>");
+		document.write(liczba2 + "<br>");
+		document.write(nazwisko + ": " + liczba3 + "<br>");
+		document.write(liczba4 + "<br>");
+
+
+        // Wczytanie opcji (u ciebie będzie inny numer opcji w twoim programie)
+        const opcja = parseInt(prompt("Wpisz imię:"));
+
+        // Wybór opcji
+        if (opcja === 3) {
+            output.style.color = "blue";
+        } else if (opcja === 29) {
+            output.style.color = "green";
+        } else if (opcja === 58) {
+            output.style.color = "red";
+        } else {
+            document.write("<font> nie ma takiej opcji</font><br>");
+        }
+    </script>
+    <div id="output"></div>
+</body>
+</html>
