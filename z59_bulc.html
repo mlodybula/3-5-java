@@ -1,0 +1,25 @@
+<html>
+    <body>
+        <script>
+            let R_bul = parseFloat(prompt("Podaj promien R:"));
+            function pntCircle(R_bul) {
+                let R = Math.floor(R_bul);
+                let pkt = 0;
+                for (let i = -1 - R; i <= 1 + R; i++) {
+                    for (let j = -1 - R; j <= 1 + R; j++) {
+                        if (Math.sqrt(i**2 + j**2) <= R) {
+                            pkt++;
+                        }
+                    }
+                }
+                return pkt;
+            }
+            if (isNaN(R_bul)) {
+                alert("Podano nieprawidlowy promien");
+            } else {
+                let pnt = pntCircle(R_bul);
+                alert("Liczba punktow w kole o promieniu " + R_bul + " wynosi: " + pnt);
+            }
+        </script>
+    </body>
+</html>

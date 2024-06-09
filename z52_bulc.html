@@ -1,0 +1,27 @@
+<html>
+<body>
+<script>
+var a_bul = (8 % 4) + 5;
+var b_bul = (7 % 6) + 20;
+
+document.write("a = " + a_bul + "<br>");
+document.write("b = " + b_bul + "<br><br>");
+for (var i = 0; i < a_bul; i++) {
+    var row = '';
+    for (var j = 0; j < b_bul; j++) {
+        if (i === 0 || i === a_bul - 1) {
+            row += '*';
+        } else {
+            if (j === 0 || j === b_bul - 1) {
+                row += '*';
+            } else {
+                row += '&nbsp;&nbsp;';
+            }
+        }
+    }
+	document.write(row + "<br>");
+}
+
+</script>
+</body>
+</html>
